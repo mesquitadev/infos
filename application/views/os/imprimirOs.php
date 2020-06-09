@@ -102,17 +102,17 @@ $totalProdutos = 0; ?>
                                             <?php echo $result->dataFinal ? date('d/m/Y', strtotime($result->dataFinal)) : ''; ?>
                                         </td>
 
-                                        <td>
-                                            <b>GARANTIA: </b>
-                                            <?php echo $result->garantia . ' dias'; ?>
-                                        </td>
+<!--                                        <td>-->
+<!--                                            <b>GARANTIA: </b>-->
+<!--                                            --><?php //echo $result->garantia . ' dias'; ?>
+<!--                                        </td>-->
 
-                                        <td>
-                                            <b>
-                                                <?php if ($result->status == 'Finalizado') { ?>
-                                                    VENC. DA GARANTIA:
-                                            </b>
-                                            <?php echo dateInterval($result->dataFinal, $result->garantia); ?><?php } ?>
+<!--                                        <td>-->
+<!--                                            <b>-->
+<!--                                                --><?php //if ($result->status == 'Finalizado') { ?>
+<!--                                                    DATA FINAL GARANTIA:-->
+<!--                                            </b>-->
+<!--                                            --><?php //echo dateInterval($result->dataFinal, $result->garantia); ?><!----><?php //} ?>
                                     </tr>
                                 <?php } ?>
 
